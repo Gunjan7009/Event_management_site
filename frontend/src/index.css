@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  padding: 0;
+  margin: 0;
+}
+/* Add styles for FullCalendar and Modal if needed
+.fc-daygrid-day-frame {
+    border-radius: 5px;
+  }
+  
+  .fc-daygrid-day-event {
+    border-radius: 5px;
+  }
+  
+  .fc-event {
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .fc-event-constrained {
+    background-color: #f39c12;  Example color for constrained events 
+  }
+  
+  Modal styles
+  .ReactModal__Content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+   */
+
+   /* Adjust the container size */
+.calendar-container {
+    width: 80%; /* Adjust as needed */
+    height: 40%; /* Adjust as needed */
+    margin: 0; /* Center the calendar */
+    z-index: 1;
+  }
+  
+  /* Adjust the FullCalendar size */
+  .fc {
+    width: 100%;
+    height: 100%;
+    min-height: 0%; /* Ensure the calendar takes up the full container height */
+  }
+  .fc-daygrid-day {
+    /* font-size: 12px; */
+    /* height: 40px; */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  .fc-daygrid-day-frame{
+    min-height: 0%;
+   background-color: #eccbcb;
+   height: 40%;
+  }
+  /*.fc-daygrid-day-frame {
+    display: flex;
+    align-items: center; /* Center the content vertically 
+    justify-content: center; /* Center the content horizontally 
+    min-height: 80px; /* Adjust height as needed 
+    min-width: 60px; /* Adjust width as needed 
+  }*/
+  .fc-daygrid-day-number {
+    font-size: 1rem; /* Increase font size for better visibility */
+    padding: 0.5em; /* Add padding to the day number */
+  }
+  .fc-daygrid-day-events {
+    display: flex;
+    flex-direction: column; /* Stack events vertically */
+    gap: 0.2em; /* Space between events */
+  }
+  /* Style the event dots */
+  .fc-event {
+    border-radius: 0.2em;
+    font-size: 0.9rem; /* Increase or decrease the text size */
+    padding: 0.2em; /* Add padding for better visibility */
+    color: #0f0606; /* Ensure text is readable */
+  }
+
+  
+  /* Hover and click styling */
+  .fc-event:hover {
+    background-color: #6453d6; /* Darken the background on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .fc-event.fc-event-selected {
+    border-color: #fff; /* Highlight selected event */
+    background-color: #444; /* Change background color when selected */
+  }
+  /* Add some styles for selected genres */
+.genre-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.genre-item.selected {
+  background-color: #f00;
+  color: #160101;
+}
+.carousel-control-next-icon{
+  visibility: hidden;
+}
+.carousel-control-prev-icon{
+  visibility: hidden;
+}
